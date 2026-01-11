@@ -27,6 +27,11 @@
                 </div>
             </div>
         </div>
+        
+        <x-form>
+        </x-form>
+
+
     </div>
 </x-layout>
 </body>
