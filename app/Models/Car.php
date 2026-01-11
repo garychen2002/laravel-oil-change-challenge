@@ -9,7 +9,7 @@ class Car extends Model
     protected $fillable = [
         'odometer_current',
         'odometer_previous',
-        'date_previous'
+        'date_previous',
     ];
 
     protected function casts(): array
@@ -18,5 +18,4 @@ class Car extends Model
             'date_previous' => 'date',
         ];
     }
-
 }

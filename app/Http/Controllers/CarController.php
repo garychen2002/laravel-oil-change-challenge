@@ -32,7 +32,7 @@ class CarController extends Controller
         $validated = $request->validate([
             'odometer_current' => 'required|integer|gte:0|gte:odometer_previous',
             'odometer_previous' => 'required|integer|gte:0',
-            'date_previous' => 'required|date|before:today'
+            'date_previous' => 'required|date|before:today',
         ]);
 
         $car = Car::create($validated);
@@ -47,6 +47,7 @@ class CarController extends Controller
     public function show(string $id)
     {
         $car = Car::find($id);
+
         return view('components.show', [$id])->with(compact('car'));
     }
 
