@@ -11,5 +11,12 @@ class Car extends Model
         'odometer_previous',
         'date_previous'
     ];
-    
+
+    protected function casts(): array
+    {
+        return [
+            'date_previous' => 'date',
+        ];
+    }
+
 }
