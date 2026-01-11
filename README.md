@@ -14,6 +14,6 @@ php artisan migrate
 composer run dev
 ```
 
-The first 2 lines are for initialization, and on later runs you only need to run `composer run dev.`
+The first 2 lines are for initialization, and on later runs you only need to run `composer run dev`.
 
 The app will be hosted at http://localhost:8000.
