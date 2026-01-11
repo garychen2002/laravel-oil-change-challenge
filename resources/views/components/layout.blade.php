@@ -25,7 +25,7 @@
 
     <footer class="footer footer-center p-5 bg-base-300 text-base-content text-xs">
         <div>
-            <p>© {{ date('Y') }} Oil Change Challenge</p>
+            <p>© {{ date('Y') }} Gary Chen</p>
         </div>
     </footer>
 </body>

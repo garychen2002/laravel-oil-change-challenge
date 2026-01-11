@@ -7,7 +7,7 @@
                         Current Odometer (km):
                         <input type="number"
                             name="odometer_current"
-                            placeholder=""
+                            value="{{ old('odometer_current') }}"
                             required
                         ></input>
                     </div>
@@ -16,7 +16,7 @@
                         Date of Previous Oil Change:
                         <input type="date"
                             name="date_previous"
-                            placeholder=""
+                            value="{{ old('date_previous') }}"
                             required
                         ></input>
                     </div>
@@ -25,7 +25,7 @@
                         Odometer at Previous Oil Change (km):
                         <input type="number"
                             name="odometer_previous"
-                            placeholder=""
+                            value="{{ old('odometer_previous') }}"
                             required
                         ></input>
                     </div>
