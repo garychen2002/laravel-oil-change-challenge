@@ -5,7 +5,7 @@
     <p>Previous Oil Change Date: {{ $car->date_previous }}</p>
 
     @if (($car->odometer_current - $car->odometer_previous) > 5000 
-    || $car->date_previous->diffInMonths(now()) > 6)
+    || $car->date_previous->diffInMonths($car->created_at) > 6)
         <p>The car is due for an oil change.</p>
     @else
         <p>The car is not due for an oil change.</p>
