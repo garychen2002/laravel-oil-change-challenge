@@ -3,6 +3,7 @@
     <p>Current Odometer: {{ $car->odometer_current }}</p>
     <p>Previous Odometer: {{ $car->odometer_previous }}</p>
     <p>Previous Oil Change Date: {{ $car->date_previous }}</p>
+    <p>Submission Date: {{  $car->created_at }}</p>
 
     @if (($car->odometer_current - $car->odometer_previous) > 5000 
     || $car->date_previous->diffInMonths($car->created_at) > 6)
